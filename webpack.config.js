@@ -31,6 +31,9 @@ var webpackConfig = {
       test: /.jsx?$/,
       include: Path.join(__dirname, './src/app'),
       loader: 'babel',
+    }, {
+      test: /\.json$/,
+      loader: 'json-loader',
     }],
   },
 };
